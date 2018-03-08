@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="220dp"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/bitem_layout_hold"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/mlistshape">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ir_cimag_authorava"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/text_item_recycle_question_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ir_cimag_authorava"
+            android:layout_alignBottom="@id/ir_cimag_authorava"
+            />
+        <TextView
+            android:id="@+id/text_item_recycle_question_content"
+            android:layout_width="wrap_content"
+            android:layout_alignLeft="@id/text_item_recycle_question_title"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:layout_below="@id/text_item_recycle_question_title"
+            android:layout_marginTop="40dp"
+            />
+        <ImageView
+            android:id="@+id/ir_imag_cheer"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/ir_txt_cheercount"
+            android:src="@drawable/cheernew"/>
+        <ImageView
+            android:id="@+id/ir_imag_navie"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/ir_txt_naviecount"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/navienew"/>
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ir_txt_naviecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/a3"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/ir_txt_cheercount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/ir_imag_navie"
+            />
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:id="@+id/ir_txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/a4"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bitem_layout_hold"
+        >
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_toLeftOf="@id/a2"
+            android:layout_marginRight="30dp"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/sanjiiao"
+            android:alpha="100"/>
+    </RelativeLayout>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/indigo"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <group>
+      <item
+          android:title="1"
+          android:id="@+id/a1"
+          android:icon="@drawable/ic_bottomtabbar_more_festival"
+          app:showAsAction="ifRoom"/>
+     <item
+         android:title="2"
+         android:id="@+id/b2"
+         android:icon="@drawable/mediastudio_ic_btn_capture_control_draft"
+         app:showAsAction="ifRoom"/>
+     <item
+         android:id="@+id/c2"
+         android:icon="@mipmap/ic_launcher_round"
+         android:title="3"
+         app:showAsAction="ifRoom"/>
+  </group>
+</menu>

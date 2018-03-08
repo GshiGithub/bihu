@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.bihu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/laucher_logo"
+        android:label="逼乎"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sign_upActivity" />
+        <activity android:name=".PersonalPage" />
+        <activity android:name=".Question_detail" />
+        <activity android:name=".AnswerList" />
+        <activity android:name=".QuestionDetail" />
+        <activity android:name=".Answer_detail" />
+        <activity android:name=".Answer" />
+        <activity android:name=".ChangeAvator" />
+        <activity android:name=".ChangePass" />
+        <activity android:name=".Collect" />
+        <activity android:name=".AskQuestion"></activity>
+    </application>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+</manifest>

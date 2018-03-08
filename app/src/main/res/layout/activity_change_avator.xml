@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@drawable/background2"
+    tools:context="com.example.asus.bihu.ChangeAvator">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_answer_3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/ac_layout_hold"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        >
+        <RelativeLayout
+            android:id="@+id/d1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/mlistshape"
+            >
+            <EditText
+                android:id="@+id/ca_et_avator"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="图片地址(多张图片用英文逗号隔开)"
+                android:textAlignment="center"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/d2"
+            android:layout_alignParentBottom="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+            <TextView
+                android:id="@+id/d3"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/sanjiiao"
+                android:layout_toLeftOf="@id/d3"
+                android:layout_marginRight="50dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ca_bu_change"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_check_circle_black_24dp"/>
+</RelativeLayout>

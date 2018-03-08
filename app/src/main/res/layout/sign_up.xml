@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/signup_image"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/cadetblue"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@id/signup_etext_name"
+        android:layout_alignBottom="@id/signup_etext_name"
+        android:src="@drawable/signup_name_image"
+        />
+    <EditText
+        android:id="@+id/signup_etext_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入昵称"
+        android:layout_above="@id/signup_etext_mima"
+        android:layout_alignLeft="@id/signup_etext_mima"/>
+
+    <EditText
+        android:id="@+id/signup_etext_mima"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mediastudio_ic_btn_capture_control_draft"
+        android:layout_toLeftOf="@id/signup_etext_mima"
+        android:layout_alignBottom="@id/signup_etext_mima"
+        />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signup_etext_mima"
+        android:layout_marginTop="20dp"
+        android:background="@color/cadetblue"
+        android:text="注册"
+        />
+
+    <ImageView
+        android:id="@+id/sign_back"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/sign_back"
+        />
+</RelativeLayout>

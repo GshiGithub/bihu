@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.asus.bihu.MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+
+    <ImageView
+        android:id="@+id/main_image_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back1"/>
+    <!--<ImageView-->
+        <!--android:id="@+id/main_image_holder"-->
+        <!--android:layout_width="280dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@drawable/mshape"/>-->
+
+
+
+    <!--<ProgressBar-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <TextView
+        android:id="@+id/bihu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="逼乎"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_bottomtabbar_more_festival"
+        android:layout_alignBottom="@id/login_name"
+        android:layout_toLeftOf="@id/login_name"
+
+
+        />
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="180dp"
+
+        android:background="@drawable/white_round"
+        android:layout_height="35dp"
+        android:hint="请输入用户名"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/mima_etext"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/mima_image"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/mediastudio_ic_btn_capture_control_draft"
+       android:layout_toLeftOf="@id/mima_etext"
+
+        android:layout_below="@id/login_image"/>
+    <EditText
+        android:id="@+id/mima_etext"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+       android:layout_centerHorizontal="true"
+        android:background="@drawable/white_round"
+        android:layout_centerVertical="true"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        />
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还没有账号？ 点击"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_button"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/darkviolet"/>
+    <TextView
+        android:id="@+id/tosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@color/red"
+        android:layout_toRightOf="@id/signup_text"
+        android:layout_alignBottom="@id/signup_text"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/green"
+        android:text="登录"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mima_etext"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fraf_image_authorava"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/no_authoravator"
+        />
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+
+        <!--android:id="@+id/fraf_image_home"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/home"-->
+        <!--/>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fraf_image_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+       />
+
+
+    <!--<TextView-->
+        <!--android:layout_toLeftOf="@id/fraf_image_authorava"-->
+        <!--android:layout_below="@id/fraf_image_authorava"-->
+        <!--android:id="@+id/fraf_text_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="20sp"-->
+        <!--/>-->
+    <TextView
+       android:layout_centerHorizontal="true"
+        android:layout_below="@id/fraf_image_authorava"
+        android:id="@+id/fraf_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+</RelativeLayout>

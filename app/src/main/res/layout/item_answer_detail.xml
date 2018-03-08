@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    >
+
+    <TextView
+
+
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/content_answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/author_image_list"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/point_image_button"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:text="图片"-->
+        <!--android:background="@color/grassgreen"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="?attr/actionBarSize"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/author_image_list"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/no_authoravator"
+        android:layout_marginTop="?attr/actionBarSize"/>
+
+
+
+
+
+
+
+</RelativeLayout>

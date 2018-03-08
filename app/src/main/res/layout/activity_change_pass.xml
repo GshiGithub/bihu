@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.asus.bihu.ChangePass">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_answer_4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+    </android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/cp_et_f"
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+        android:hint="输入新密码"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/cp_et_s"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cp_et_f"
+        android:layout_alignLeft="@id/cp_et_f"
+        android:hint="再次输入新密码"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/cp_bu_change"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cp_et_s"
+        android:layout_centerHorizontal="true"
+        android:background="@color/green"
+        android:text="修改密码"
+        />
+</RelativeLayout>

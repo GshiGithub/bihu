@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <group android:checkableBehavior="single">
+       <item
+           android:id="@+id/answerid_menuitem_menu"
+           android:title=""
+           />
+       <item
+
+           android:id="@+id/answerdate_menuitem_menu"
+           android:title=""/>
+       <item
+           android:title=""
+           android:id="@+id/answercheercount_menuitem_menu"
+           />
+
+       <item
+           android:title=""
+           android:id="@+id/answermenu_itm_answernaviecount"/>
+       <item
+           android:title=""
+           android:icon="@drawable/cheer4"
+
+           android:id="@+id/ansme_itm_answercheer"
+           />
+       <item
+           android:icon="@drawable/navie"
+           android:id="@+id/ansme_itm_answernavie"
+           android:title=""/>
+       <item
+           android:id="@+id/ansme_itm_answerbest"
+           android:title=""/>
+
+   </group>
+</menu>
